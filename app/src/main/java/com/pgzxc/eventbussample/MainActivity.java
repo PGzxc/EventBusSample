@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         btnClick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TestEvent event = new TestEvent();
+                MessageEvent event = new MessageEvent();
                 event.setMsg("已接收到事件!");
                 EventBus.getDefault().postSticky(event);
                 startActivity(new Intent(MainActivity.this,SecondActivity.class));
@@ -43,10 +43,9 @@ public class MainActivity extends AppCompatActivity {
         tvContent = findViewById(R.id.tv_content);
     }
 //    @Subscribe(threadMode = ThreadMode.MAIN,sticky = true)
-//    public void onEventMainThread(TestEvent event) {
+//    public void onEventMainThread(MessageEvent event) {
 //        tvContent.setText(event.getMsg());
 //    }
-
 //    @Override
 //    protected void onStart() {
 //        super.onStart();

@@ -25,7 +25,7 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN,sticky = true)
-    public void onEventMainThread(TestEvent event) {
+    public void onEventMainThread(MessageEvent event) {
         tvContent.setText(event.getMsg());
     }
     @Override

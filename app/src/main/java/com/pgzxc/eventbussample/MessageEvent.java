@@ -4,7 +4,7 @@ package com.pgzxc.eventbussample;
  * Created by admin on 2018/2/1.
  */
 
-public class TestEvent {
+public class MessageEvent {
 
     private String msg;
 
